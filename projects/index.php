@@ -7,9 +7,12 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" type="text/css" href="schedule-style.css">
+    <link rel="stylesheet" type="text/css" href="projects-style.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="pickYear.js" ></script>
 </head>
 
 <body>
@@ -41,31 +44,29 @@
             </nav>
 
             <section>
-                <h1>2011 Tentative Camping Schedule<i><br> - 2016 Update Coming Soon</i></h1>
-                <p>Camping weekends are usually the 2nd weekend of the month.   Dates or locations may change if necessary.   Please call one of the numbers listed to confirm each camping weekend. </p> 
-
-                <p>Each unit is responsible for making their own reservation at the campground.</p>  
+                <h1>
+                    <select id="yearSelect" style="height:25px; line-height:25px; font-size:20px;">
+                    <?php
+                        for ($y = date("Y"); $y >= 2015; $y--) {
+                            echo '<option value="'.$y.'">'.$y.'</option>';
+                        }
+                    ?>
+                        <option value="2011">2011</option>
+                    </select>
+                 Projects & Charitable Work</h1>
 
                 <div id="displayedSchedule">
-                    <div class="event">
-                        <div class="dateTimeAndName">January 15 -- New Year's Breakfast at 9 AM.</div>
-                        <div class="eventLocation">Shoney's,  W. Broad St & Skipwith (west of Parham Road)
-</div>
-                        <div class="eventDescription"></div>
-                        <div class="eventContacts">Coordinator:  Carole Featherston</div>
-                    </div>
-                    <div class="event">
-                        <div class="dateTimeAndName">February 12 -- Breakfast at 9AM</div>
-                        <div class="eventLocation">Mimi's Cafe, W. Broad St, Short Pump</div>
-                        <div class="eventDescription"></div>
-                        <div class="eventContacts">Coordinator:  Jim Lyles</div>
-                    </div>
-                    <div class="event">
-                        <div class="dateTimeAndName">March  12 -- Lunch at Noon</div>
-                        <div class="eventLocation">Heidi Garcia's in Chesterfield</div>
-                        <div class="eventDescription">Optional Evening at Nuevo Mexico (Stony Point, Huguenot Rd near Buford Rd)<br>Entertainment:   Susan Greenbaum</div>
-                        <div class="eventContacts">Coordinator:  Jane Hoffer</div>
-                    </div>
+                    <?php
+                        include 'formattedSchedule.php';
+                        echo '<div id="2011" class="year">';
+                        retrieveYearSchedule("2011");
+                        echo '</div>';
+                        for ($y = date("Y"); $y >= 2015; $y--) {
+                            echo '<div id="'.$y.'" class="year">';
+                            retrieveYearSchedule($y);
+                            echo '</div>';
+                        }
+                    ?>
                 </div>
 
                 <br><br>Events may be added at any time, check back later!
@@ -75,7 +76,9 @@
 
     <footer>
         <div id="footerContent">
-            Copyright &copy Sundowner Sams, 2015
+            <?php
+                echo 'Copyright &copy Sundowner Sams, '.date("Y");
+            ?>
         </div>
     </footer>
 

@@ -1,0 +1,48 @@
+{
+	"2011":[
+		{	
+			"name":"April, 2011.  Davis Lakes & Campground, Suffolk, VA",
+			"description":"Suffolk Visitor Tour of Dismal Swamp & Lake Drummond",
+			"photos":[
+				{
+					"location":"photos/scheduled/2011/April 15-17 -- Davis Lakes & Campground/959081.jpg",
+					"description":"First stop on the Dismal Swamp Tour"
+				},
+				{
+					"location":"photos/scheduled/2011/April 15-17 -- Davis Lakes & Campground/1021420.jpg",
+					"description":""
+				}
+			]
+		},
+		{	
+			"name":"July 8-10 -- Westmoreland State Park",
+			"description":"Another wonderful camping weekend despite some hot weather.  Breakfast at Joe & Minnie's, hiking and bike trails, swimming pool,  a great potluck BBQ and a private Sunday service at the campsite.",
+			"photos":[
+				{
+					"location":"photos/scheduled/2011/July 8-10 -- Westmoreland State Park/948765.jpg",
+					"description":""
+				},
+				{
+					"location":"photos/scheduled/2011/July 8-10 -- Westmoreland State Park/1914687.jpg",
+					"description":""
+				}
+			]
+		}
+	],
+	"2015":[
+		{	
+			"name":"April, 2011.  Davis Lakes & Campground, Suffolk, VA",
+			"description":"Suffolk Visitor Tour of Dismal Swamp & Lake Drummond",
+			"photos":[
+				{
+					"location":"photos/scheduled/2011/April 15-17 -- Davis Lakes & Campground/959081.jpg",
+					"description":"First stop on the Dismal Swamp Tour"
+				},
+				{
+					"location":"photos/scheduled/2011/April 15-17 -- Davis Lakes & Campground/1021420.jpg",
+					"description":""
+				}
+			]
+		}
+	]
+}
