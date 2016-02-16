@@ -1,0 +1,40 @@
+.lbimg:hover {
+    outline: 3px solid white;
+}
+
+.lbimg {
+    /*width: 177px;*/
+    /*height: 177px;*/
+    margin: 10px;
+    float: left;
+
+    outline: 1px solid white;
+    outline-offset: 5px;
+
+    height: auto;
+    width: auto;
+    max-height: 177px;
+    max-width: 177px;
+}
+
+.album-desc {
+    padding-bottom: 15px;
+}
+
+.album {
+    float: left;
+    clear:both;
+    padding-top: 20px;
+}
+
+#inner {
+    width: 830px;
+    max-width: 830px;
+}
+
+
+section {
+    min-width:600px;
+    padding-left: 40px;
+    padding-right: 0px;
+}
