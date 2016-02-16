@@ -29,34 +29,22 @@
 			]
 		}
 	],
-	"2015":[
-	        {	
+
+{
+	"2015":{	
 			"name":"October 24 -- Apple Festival, Graves Mountain, VA",
 			"description":"2015 Graves Mountain Apple Festival",
 			"photos":[
 				{
-					"location":"photos/scheduled/2015/October 24 -- 2015 Apple Festival/IMG_0619.jpg",
-					"description":""
-			
-				},
-				{
-					"location":"photos/scheduled/2015/October 24 -- 2015 Apple Festival/IMG_0628.jpg",
-					"description":""
-			
-				},
-				{
-					"location":"photos/scheduled/2015/October 24 -- 2015 Apple Festival/IMG_0633.jpg",
-					"description":""
-			
-				},
-				{
-					"location":"photos/scheduled/2015/October 24 -- 2015 Apple Festival/IMG_0659.jpg",
+					"location":"photos/scheduled/2015/October 24 -- 2015 Apple Festival.jpg",
 					"description":""
 			
 				}
-			]
-		}	
-	]
+			}
+		}
+
+	}
+
 }
 
 
