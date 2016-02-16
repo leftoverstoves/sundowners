@@ -16,7 +16,7 @@ function retrieveYearSchedule($year) {
 				if($startDate != $endDate) {
 						echo ' - '.date("F j",strtotime($endDate));
 				}
-						echo ': '.$name.', '.$event["time"].'.</div>
+						echo ': '.$name.($event["time"]==''?'':', ').$event["time"].'.</div>
 						<div class="eventLocation">'.$event["location"].'</div>
 						<div class="eventDescription">'.$event["description"].'</div>';
 				if($event["contact"]!="") {

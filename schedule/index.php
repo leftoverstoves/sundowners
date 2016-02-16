@@ -34,8 +34,8 @@
 
                 <img class="navbarcurlies" src="../site-resources/navbar_top.gif">
                 <ul id="navlist">   
-                    <li><a class="lilink" href="../">Home</a></li>
-                    <li><a class="lilink" href="../officers">Officers</a></li>
+                    <li><a class="lilink" href="../">About Us</a></li>
+                    <li><a class="lilink" href="../contact-us">Contact Us</a></li>
                     <li><a class="lilink" href="../schedule">Camping Schedule</a></li>
                     <li><a class="lilink" href="../photos">Photos</a></li>
                     <li><a class="lilink" href="../projects">Projects</a></li>
@@ -47,7 +47,7 @@
                 <h1>
                     <select id="yearSelect" style="height:25px; line-height:25px; font-size:20px;">
                     <?php
-                        for ($y = date("Y"); $y >= 2015; $y--) {
+                        for ($y = date("Y"); $y >= 2016; $y--) {
                             echo '<option value="'.$y.'">'.$y.'</option>';
                         }
                     ?>
@@ -61,11 +61,11 @@
                 <div id="displayedSchedule">
                     <?php
                         include 'formattedSchedule.php';
-                        echo '<div id="2011" class="year">';
+                        echo '<div id="2011" class="year" style="display:none">';
                         retrieveYearSchedule("2011");
                         echo '</div>';
-                        for ($y = date("Y"); $y >= 2015; $y--) {
-                            echo '<div id="'.$y.'" class="year">';
+                        for ($y = date("Y"); $y >= 2016; $y--) {
+                            echo '<div id="'.$y.'" class="year" style="display:none">';
                             retrieveYearSchedule($y);
                             echo '</div>';
                         }

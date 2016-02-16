@@ -1,5 +1,5 @@
 <?php
-/*Copied from Schedule, only json file name changed [31 Dec 15]*/
+/*Copied from Schedule, only json file name changed to retrieve project set [31 Dec 15]*/
 function retrieveYearSchedule($year) {
 
 	$schedule_file = fopen("projects.json", "r") or die("Unable to open file!");
